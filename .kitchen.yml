@@ -44,13 +44,13 @@ platforms:
 suites:
   - name: linux
     run_list:
-      - recipe[test::default]
+      - recipe[bft::default]
     excludes: ["macos-10.12", "windows-2012r2", "windows-2016"]
   - name: macos
     run_list:
-      - recipe[test::macos]
+      - recipe[bft::macos]
     includes: ["macos-10.12"]
   - name: windows
     run_list:
-      - recipe[test::windows]
+      - recipe[bft::windows]
     includes: ["windows-2012r2", "windows-2016"]
