@@ -1,26 +1,56 @@
----
 driver:
   name: vagrant
 
 provisioner:
   name: chef_zero
-  # You may wish to disable always updating cookbooks in CI or other testing environments.
-  # For example:
-  #   always_update_cookbooks: <%= !ENV['CI'] %>
-  always_update_cookbooks: true
+  deprecations_as_errors: true
+  product_name: chef
+  channel: current
 
 verifier:
   name: inspec
 
 platforms:
-  - name: ubuntu-16.04
+  - name: amazonlinux
+    driver_config:
+      box: mvbcoding/awslinux
+  - name: centos-6
   - name: centos-7
+  - name: debian-7
+  - name: debian-8
+  - name: debian-9
+  - name: fedora-26
+  - name: fedora-27
+  - name: opensuse-leap-42
+  - name: sles-11-sp2
+    driver:
+      box: chef/sles-11-sp2-x86_64 # private box
+  - name: sles-12-sp1
+    driver:
+      box: chef/sles-12-sp1-x86_64 # private box
+  - name: ubuntu-14.04
+  - name: ubuntu-16.04
+  - name: macos-10.12
+    driver:
+      box: chef/macos-10.12 # private box in Chef's Atlas account
+      provider: vmware_fusion
+  - name: windows-2012r2
+    driver:
+      box: chef/windows-server-2012r2-standard # private box
+  - name: windows-2016
+    driver:
+      box: chef/windows-server-2016-standard # private box
 
 suites:
-  - name: default
+  - name: linux
     run_list:
       - recipe[test::default]
-    verifier:
-      inspec_tests:
-        - test/smoke/default
-    attributes:
+    excludes: ["macos-10.12", "windows-2012r2", "windows-2016"]
+  - name: macos
+    run_list:
+      - recipe[test::macos]
+    includes: ["macos-10.12"]
+  - name: windows
+    run_list:
+      - recipe[test::windows]
+    includes: ["windows-2012r2", "windows-2016"]
