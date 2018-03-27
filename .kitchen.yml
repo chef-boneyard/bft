@@ -30,6 +30,7 @@ platforms:
       box: chef/sles-12-sp1-x86_64 # private box
   - name: ubuntu-14.04
   - name: ubuntu-16.04
+  - name: ubuntu-18.04
   - name: macos-10.12
     driver:
       box: chef/macos-10.12 # private box in Chef's Atlas account
