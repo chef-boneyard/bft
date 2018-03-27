@@ -6,7 +6,7 @@ include_recipe '::_openssl'
 include_recipe '::_rhsm' if platform?('redhat')
 include_recipe '::_sudo'
 include_recipe '::_swap_file'
-include_recipe '::_sysctl'
+include_recipe '::_sysctl' unless platform?('suse') && node['platform_version'].to_i < 12
 
 build_essential 'compilation tools'
 
