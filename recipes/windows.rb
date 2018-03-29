@@ -1,4 +1,4 @@
-hostname 'chefnode.example.com'
+hostname 'chefnode'
 
 include_recipe '::_windows_autorun'
 include_recipe '::_windows_feature'
