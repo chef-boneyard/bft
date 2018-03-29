@@ -1,6 +1,6 @@
 dmg_package 'Tunnelblick' do
-  source   'https://tunnelblick.net/release/Tunnelblick_3.7.0_build_4790.dmg'
-  checksum '5053038aa8caf7dea66dcab11d6d240672216e6546eff4c2622e216c61af85e5'
+  source   'https://tunnelblick.net/release/Tunnelblick_3.7.5a_build_5011.dmg'
+  checksum '1da1c1c7c7380f74b8674bb1a094296dd384d49871856b7477a0948852657167'
   action   :install
 end
 
