@@ -8,7 +8,7 @@ provisioner:
   name: chef_zero
   deprecations_as_errors: true
   product_name: chef
-  channel: unstable
+  channel: current
   retry_on_exit_code:
     - 35
 
