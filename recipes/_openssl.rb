@@ -235,23 +235,23 @@ end
 # X509_CRL HERE
 #
 
-# openssl_x509_crl "#{base}/my_ca2.crl" do
-#   ca_cert_file "#{base}/my_ca2.crt"
-#   ca_key_file "#{base}/my_ca2.key"
-#   expire 1
-# end
-#
-# openssl_x509_crl "#{base}/my_ca2.crl" do
-#   ca_cert_file "#{base}/my_ca2.crt"
-#   ca_key_file "#{base}/my_ca2.key"
-#   renewal_threshold 2
-# end
-#
-# openssl_x509_crl "#{base}/my_ca2.crl" do
-#   ca_cert_file "#{base}/my_ca2.crt"
-#   ca_key_file "#{base}/my_ca2.key"
-#   serial_to_revoke 'C7BCB6602A2E4251EF4E2827A228CB52BC0CEA2F'
-# end
+openssl_x509_crl "#{base}/my_ca2.crl" do
+  ca_cert_file "#{base}/my_ca2.crt"
+  ca_key_file "#{base}/my_ca2.key"
+  expire 1
+end
+
+openssl_x509_crl "#{base}/my_ca2.crl" do
+  ca_cert_file "#{base}/my_ca2.crt"
+  ca_key_file "#{base}/my_ca2.key"
+  renewal_threshold 2
+end
+
+openssl_x509_crl "#{base}/my_ca2.crl" do
+  ca_cert_file "#{base}/my_ca2.crt"
+  ca_key_file "#{base}/my_ca2.key"
+  serial_to_revoke 'C7BCB6602A2E4251EF4E2827A228CB52BC0CEA2F'
+end
 
 #
 # X509_REQUEST HERE
