@@ -1,1 +1,0 @@
-windows_workgroup 'myworkgroup'
