@@ -13,4 +13,6 @@ build_essential 'compilation tools'
 
 hostname 'chefnode.example.com'
 
-locale 'default'
+locale 'en_US.UTF-8'
+
+timezone 'UTC'
