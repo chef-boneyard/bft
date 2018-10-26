@@ -1,5 +1,7 @@
 # BFT
 
+[![Build Status](https://travis-ci.org/chef/bft.svg?branch=master)](https://travis-ci.org/chef/bft)
+
 The big (functional?) tester
 
 ## What is it
