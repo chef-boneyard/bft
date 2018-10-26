@@ -38,9 +38,3 @@ before_script:
   - foodcritic --version
 
 script: KITCHEN_LOCAL_YAML=kitchen.dokken.yml kitchen verify ${INSTANCE}
-
-matrix:
-  include:
-    - script:
-      - chef exec delivery local all
-      env: UNIT_AND_LINT=1
