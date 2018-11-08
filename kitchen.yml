@@ -9,6 +9,7 @@ provisioner:
   deprecations_as_errors: true
   product_name: chef
   channel: current
+  product_version: 14
   retry_on_exit_code:
     - 35
 
@@ -16,17 +17,16 @@ verifier:
   name: inspec
 
 platforms:
-  - name: amazonlinux-2
-    driver_config:
-      box: winky/amazonlinux-2
   - name: amazonlinux
     driver_config:
       box: mvbcoding/awslinux
+  - name: amazonlinux-2
+    driver_config:
+      box: winky/amazonlinux-2
   - name: centos-6
   - name: centos-7
   - name: debian-8
   - name: debian-9
-  - name: fedora-27
   - name: fedora-28
   - name: opensuse-leap-42
   - name: opensuse-leap-15.0
@@ -51,7 +51,7 @@ platforms:
       box: chef/windows-10-enterprise # private box
   - name: windows-2008r2
     driver:
-      box: tas50/windows_2008r2_updated
+      box: tas50/windows_2008r2
   - name: windows-2012r2
     driver:
       box: tas50/windows_2012r2
