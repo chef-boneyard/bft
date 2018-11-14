@@ -1,4 +1,4 @@
-windows_package '7zip' do
+windows_package '7zip 18.05 (x64 edition)' do
   source 'https://www.7-zip.org/a/7z1805-x64.msi'
   remote_file_attributes ({
     :path => 'C:\\7zip.msi',
@@ -6,9 +6,9 @@ windows_package '7zip' do
   })
 end
 
-windows_package 'Mercurial 3.6.1 (64-bit)' do
-  source 'http://mercurial.selenic.com/release/windows/Mercurial-3.6.1-x64.exe'
-  checksum 'febd29578cb6736163d232708b834a2ddd119aa40abc536b2c313fc5e1b5831d'
+windows_package 'Mercurial 4.7.2 (64-bit)' do
+  source 'https://www.mercurial-scm.org/release/windows/Mercurial-4.7.2-x64.exe'
+  checksum '48229827ca9b040289cf973f36866779140ed63b4a22824b7d115e1869e69955'
 end
 
 windows_package 'Microsoft Visual C++ 2005 Redistributable' do
