@@ -3,6 +3,7 @@ hostname 'chefnode'
 user 'tim' do
   full_name 'Tim Smith'
   comment "This is Tim's user"
+  password "h@ckThePl@net"
 end
 
 include_recipe '::_windows_autorun'
@@ -28,5 +29,6 @@ include_recipe '::_windows_printer_port'
 include_recipe '::_windows_service'
 include_recipe '::_windows_share'
 include_recipe '::_windows_shortcut'
+include_recipe '::_windows_task'
 
 windows_workgroup 'myworkgroup'
