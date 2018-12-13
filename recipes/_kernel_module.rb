@@ -1,6 +1,6 @@
-kernel_module 'parport'
+kernel_module 'ufs'
 
-kernel_module 'lp' do
+kernel_module 'ufs' do
   action :load
 end
 
