@@ -1,6 +1,9 @@
-kernel_module 'ufs'
+# ufs isn't available on centos, but lp isn't available on Amazon
+module_name = platform_family?('rhel') ? 'lp' : 'ufs'
 
-kernel_module 'ufs' do
+kernel_module module_name
+
+kernel_module module_name do
   action :load
 end
 
