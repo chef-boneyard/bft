@@ -178,7 +178,8 @@ openssl_ec_private_key "#{base}/my_ca2.key" do
   key_curve 'secp521r1'
 end
 
-openssl_x509_request "#{base}/my_ca2.csr" do
+openssl_x509_request "The my_ca2.csr cert" do
+  path "#{base}/my_ca2.csr"
   common_name 'CA2'
   key_file "#{base}/my_ca2.key"
   action :create
