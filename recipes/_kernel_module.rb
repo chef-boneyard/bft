@@ -1,5 +1,5 @@
-# ufs isn't available on centos, but lp isn't available on Amazon
-module_name = platform_family?('rhel') ? 'lp' : 'ufs'
+# ufs isn't available on centos/fedora, but lp isn't available on Amazon
+module_name = platform_family?('rhel', 'fedora') ? 'lp' : 'ufs'
 
 kernel_module module_name
 
