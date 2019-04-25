@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/chef/bft.svg?branch=master)](https://travis-ci.org/chef/bft)
 
-**Umbrella Project**: [Chef Infra](https://github.com/chef/chef-oss-practices/blob/master/teams/chef-infra.md)
+**Umbrella Project**: [Chef Infra](https://github.com/chef/chef-oss-practices/blob/master/projects/chef-infra.md)
 
 **Project State**: [Active](https://github.com/chef/chef-oss-practices/blob/master/repo-management/repo-states.md#active)
 
