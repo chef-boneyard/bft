@@ -3,7 +3,7 @@ hostname 'chefnode'
 user 'tim' do
   full_name 'Tim Smith'
   comment "This is Tim's user"
-  password "h@ckThePl@net"
+  password 'h@ckThePl@net'
 end
 
 include_recipe '::_windows_autorun'
@@ -11,12 +11,12 @@ include_recipe '::_windows_certificate'
 
 # legacy name
 env 'ComSpec' do
-  value "C:\\Windows\\system32\\cmd.exe"
+  value 'C:\\Windows\\system32\\cmd.exe'
 end
 
 # chef 14+ name
 windows_env 'ComSpec' do
-  value "C:\\Windows\\system32\\cmd.exe"
+  value 'C:\\Windows\\system32\\cmd.exe'
 end
 
 include_recipe '::_windows_feature'

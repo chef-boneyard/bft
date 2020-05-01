@@ -9,7 +9,7 @@ provisioner:
   deprecations_as_errors: true
   product_name: chef
   channel: current
-  product_version: 14
+  product_version: 16
   retry_on_exit_code:
     - 35
 

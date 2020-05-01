@@ -29,7 +29,7 @@ windows_task 'chef-client' do
   command 'chef-client'
   run_level :highest
   frequency :once
-  start_time "16:10"
+  start_time '16:10'
 end
 
 # Create a scheduled task to run on current day every 3 weeks and delay upto 1 min

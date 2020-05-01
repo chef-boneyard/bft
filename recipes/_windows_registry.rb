@@ -1,8 +1,8 @@
-registry_key "HKEY_LOCAL_MACHINE\\path-to-key\\Policies\\System" do
+registry_key 'HKEY_LOCAL_MACHINE\\path-to-key\\Policies\\System' do
   values [{
     name: 'EnableLUA',
     type: :dword,
-    data: 0
+    data: 0,
   }]
   recursive true
   action :create
@@ -12,17 +12,17 @@ registry_key 'HKEY_LOCAL_MACHINE\path-to-key\Policies\System' do
   values [{
     name: 'EnableLUA',
     type: :dword,
-    data: 0
+    data: 0,
   }]
   recursive true
   action :create
 end
 
-registry_key "HKEY_LOCAL_MACHINE\\SOFTWARE\\path\\to\\key\\AU" do
+registry_key 'HKEY_LOCAL_MACHINE\\SOFTWARE\\path\\to\\key\\AU' do
   values [{
     name: 'NoAutoRebootWithLoggedOnUsers',
     type: :dword,
-    data: ''
+    data: '',
     }]
   recursive true
   action :delete
@@ -32,7 +32,7 @@ registry_key 'HKEY_LOCAL_MACHINE\SOFTWARE\path\to\key\AU' do
   values [{
     name: 'NoAutoRebootWithLoggedOnUsers',
     type: :dword,
-    data: ''
+    data: '',
     }]
   action :delete
 end

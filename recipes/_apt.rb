@@ -1,6 +1,6 @@
 apt_update
 
-if node['platform'] == 'ubuntu'
+if platform?('ubuntu')
   # Apt Repository
   apt_repository 'juju' do
     uri '"http://ppa.launchpad.net/juju/stable/ubuntu"'

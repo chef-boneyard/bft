@@ -90,7 +90,6 @@ cron_d 'with_random_delay' do
 end
 
 cron_d 'test-weekday-usage-report2' do
-  name 'test-weekday-usage-report'
   minute '1'
   hour '1'
   weekday '1'

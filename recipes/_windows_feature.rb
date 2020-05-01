@@ -30,7 +30,7 @@ unless node['platform_version'].to_f < 6.2 || node['kernel']['product_type'] == 
     install_method :windows_feature_powershell
   end
 
-  windows_feature_powershell ['Web-Asp-Net45', 'Web-Net-Ext45']
+  windows_feature_powershell %w(Web-Asp-Net45 Web-Net-Ext45)
 
   windows_feature ['NPAS'] do
     management_tools true

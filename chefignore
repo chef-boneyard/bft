@@ -30,6 +30,7 @@ tmtags
 .project
 .settings
 mkmf.log
+.vscode
 
 ## COMPILED ##
 ##############
@@ -59,6 +60,8 @@ spec/*
 .travis.yml
 .foodcritic
 appveyor.yml
+.mdlrc
+Dangerfile
 
 # SCM #
 #######
@@ -72,6 +75,7 @@ appveyor.yml
 */.bzr/*
 */.hg/*
 */.svn/*
+.github
 
 # Berkshelf #
 #############
@@ -90,4 +94,3 @@ Policyfile.lock.json
 CONTRIBUTING*
 CHANGELOG*
 TESTING*
-
