@@ -3,7 +3,7 @@ sudo: required
 addons:
   apt:
     sources:
-      - chef-current-trusty
+      - chef-current-xenial
     packages:
       - chefdk
 
@@ -22,13 +22,14 @@ env:
   - INSTANCE=linux-amazonlinux-2
   - INSTANCE=linux-centos-6
   - INSTANCE=linux-centos-7
-  - INSTANCE=linux-debian-8
+  - INSTANCE=linux-centos-8
   - INSTANCE=linux-debian-9
+  - INSTANCE=linux-debian-10
   - INSTANCE=linux-fedora-latest
-  - INSTANCE=linux-opensuse-leap
-  - INSTANCE=linux-ubuntu-1404
+  - INSTANCE=linux-opensuse-leap-15
   - INSTANCE=linux-ubuntu-1604
   - INSTANCE=linux-ubuntu-1804
+  - INSTANCE=linux-ubuntu-2004
 
 before_script:
   - sudo iptables -L DOCKER || ( echo "DOCKER iptables chain missing" ; sudo iptables -N DOCKER )

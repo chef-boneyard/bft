@@ -3,7 +3,7 @@ apt_update
 if platform?('ubuntu')
   # Apt Repository
   apt_repository 'juju' do
-    uri '"http://ppa.launchpad.net/juju/stable/ubuntu"'
+    uri 'http://ppa.launchpad.net/juju/stable/ubuntu'
     components ['main']
     distribution 'trusty'
     key 'C8068B11'
