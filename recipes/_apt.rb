@@ -11,13 +11,11 @@ if platform?('ubuntu')
     action :add
   end
 
-  # Apt Repository
-  apt_repository 'nodejs' do
-    uri 'http://ppa.launchpad.net/chris-lea/node.js/ubuntu'
-    components ['main']
-    distribution 'trusty'
-    key 'C7917B12'
+  # Apt Repository w/ keyserver, no key, and not specifying the component
+  apt_repository 'openstack' do
+    uri 'ppa:managedit/openstack'
     keyserver 'hkp://keyserver.ubuntu.com:80'
+    distribution 'bionic'
     action :add
   end
 
@@ -58,6 +56,8 @@ end
 package 'nginx' do
   action :install
 end
+
+package %w(nginx nginx-extras)
 
 # Apt Preferences
 apt_preference 'chef' do
