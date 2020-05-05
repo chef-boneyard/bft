@@ -17,3 +17,9 @@ homebrew_cask "Let's remove google-chrome" do
   install_cask false
   action :remove
 end
+
+package %w(git openssl)
+
+package 'git' do
+  action :remove
+end
