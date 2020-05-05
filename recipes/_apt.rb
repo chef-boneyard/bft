@@ -15,7 +15,7 @@ if platform?('ubuntu')
   apt_repository 'openstack' do
     uri 'ppa:managedit/openstack'
     keyserver 'hkp://keyserver.ubuntu.com:80'
-    distribution 'bionic'
+    distribution 'oneiric'
     action :add
   end
 
