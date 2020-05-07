@@ -16,3 +16,7 @@ windows_package 'Microsoft Visual C++ 2005 Redistributable' do
   installer_type :custom
   options '/Q'
 end
+
+windows_package '7zip 18.05 (x64 edition)' do
+  action :remove
+end

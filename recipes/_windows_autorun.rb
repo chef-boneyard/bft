@@ -16,9 +16,3 @@ windows_auto_run 'add wordpad' do
   root :user
   action :create
 end
-
-windows_font 'CodeNewRoman.otf'
-
-windows_feature 'install SNMP' do
-  feature_name 'SNMP'
-end
