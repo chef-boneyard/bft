@@ -2,6 +2,7 @@ driver:
   name: dokken
   privileged: true # because Docker and SystemD/Upstart
   chef_version: <%= ENV['CHEF_VERSION'] || 'current' %>
+  log_level: <%= ENV['CHEF_LOG_LEVEL'] || 'debug' %>
 
 transport:
   name: dokken

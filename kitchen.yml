@@ -1,4 +1,4 @@
-cddriver:
+driver:
   name: vagrant
   customize:
     cpus: 2
@@ -41,9 +41,6 @@ platforms:
     driver:
       box: tas50/macos_10.15
   - name: windows-10
-    driver:
-      box: tas50/windows_10
-  - name: windows-10
     transport:
       name: winrm
       elevated: true
@@ -61,7 +58,7 @@ platforms:
       elevated: true
     driver:
       box: tas50/windows_2016
-  - name: windows2019
+  - name: windows-2019
     transport:
       name: winrm
       elevated: true
