@@ -59,7 +59,6 @@ kitchen*
 spec/*
 .travis.yml
 .foodcritic
-appveyor.yml
 .mdlrc
 Dangerfile
 
