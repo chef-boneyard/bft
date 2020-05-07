@@ -1,5 +1,6 @@
 include_recipe '::_apt' if platform_family?('debian')
 include_recipe '::_yum' if platform_family?('rhel')
+include_recipe '::_alternatives' if platform_family?('rhel')
 include_recipe '::_chef_handler'
 include_recipe '::_ohai_hint'
 include_recipe '::_openssl'
