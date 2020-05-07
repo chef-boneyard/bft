@@ -114,13 +114,7 @@ cron_access 'alice' do
   action :allow
 end
 
-cron_access 'bob' do
-  action :allow
-end
-
-cron_access 'tom' do
-  action :allow
-end
+cron_access 'bob'
 
 # legacy resource name
 cron_manage 'Bill breaks things. Take away cron' do
