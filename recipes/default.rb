@@ -6,7 +6,7 @@ include_recipe '::_openssl'
 include_recipe '::_rhsm' if platform?('redhat')
 include_recipe '::_sudo'
 include_recipe '::_swap_file'
-include_recipe '::_sysctl' unless platform?('suse') && node['platform_version'].to_i < 12
+include_recipe '::_sysctl'
 include_recipe '::_cron'
 include_recipe '::_kernel_module' unless docker?
 
