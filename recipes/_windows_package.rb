@@ -1,7 +1,6 @@
 windows_package '7zip 18.05 (x64 edition)' do
   source 'https://www.7-zip.org/a/7z1805-x64.msi'
   remote_file_attributes ({
-    path: 'C:\\7zip.msi',
     checksum: '898c1ca0015183fe2ba7d55cacf0a1dea35e873bf3f8090f362a6288c6ef08d7',
   })
 end
