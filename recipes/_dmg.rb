@@ -1,13 +1,13 @@
 dmg_package 'Tunnelblick' do
-  source   'https://tunnelblick.net/release/Tunnelblick_3.7.5a_build_5011.dmg'
-  checksum '1da1c1c7c7380f74b8674bb1a094296dd384d49871856b7477a0948852657167'
+  source   'https://tunnelblick.net/release/Tunnelblick_3.8.2a_build_5481.dmg'
+  checksum '3857f395f2c0026943bc76d46cb8bb97f5655e9ea0d9a8d2bdca1e5d82a7325b'
   action   :install
 end
 
 dmg_package 'virtualbox' do
   app 'virtualbox'
-  source 'http://download.virtualbox.org/virtualbox/4.3.40/VirtualBox-4.3.40-110317-OSX.dmg'
-  checksum 'eb70fc0f36844ced6dc7deeb30397866fbaffb4a8dfb6071b047e943cae6a312'
+  source 'http://download.virtualbox.org/virtualbox/6.1.8/VirtualBox-6.1.8-137981-OSX.dmg'
+  checksum '569e91eb3c7cb002d407b236a7aa71ac610cf2ad1afa03730dab11fbd4b89e7c'
   type 'pkg'
   accept_eula true
   allow_untrusted true
